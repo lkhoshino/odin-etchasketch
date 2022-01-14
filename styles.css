@@ -1,0 +1,21 @@
+:root{
+    --grid-cols:1;
+    --grid-rows:1;
+
+}
+
+.container{
+    display: grid;
+    grid-gap: 1px;
+    grid-template-rows: repeat(var(--grid-rows), fit-content(100%));
+    grid-template-columns: repeat(var(--grid-cols), fit-content(100%));
+}
+
+.grid-item {
+    padding: 50px;
+    border: 1px solid black;
+    text-align: center;
+    max-width: 1px;
+    max-height: 1px;
+}
+
